@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ChatWOW</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ChatWOW</string>
+    <string name="Setting">Setting</string>
+    <string name="Input_Name">Input_Name</string>
+    <string name="Target_IP">Target_IP</string>
+    
+
+</resources>

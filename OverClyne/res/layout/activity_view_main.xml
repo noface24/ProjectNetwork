@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/setServo"
+        android:ems="10"
+        android:text="192.168.43.1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:minHeight="47dp"
+        android:text="Start"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setServo"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/setServo"
+        android:layout_toRightOf="@+id/setServo"
+        android:minHeight="43dp"
+        android:text="Beep"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="55dp"
+        android:text="GO"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button3"
+        android:minHeight="55dp"
+        android:text="Back"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/SRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/SLeft"
+        android:minHeight="55dp"
+        android:text="Servo R" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Viewaccelerometer"
+        android:layout_toLeftOf="@+id/SLeft"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/setServo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/flash"
+        android:layout_below="@+id/sonic"
+        android:layout_toRightOf="@+id/imageView1"
+        android:minHeight="55dp"
+        android:text="Ser Off"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:text="Status : " />
+
+    <TextView
+        android:id="@+id/view_Sonic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="78dp"
+        android:text="Sonic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_toLeftOf="@+id/view_Sonic"
+        android:text="Distance : " />
+
+    <Button
+        android:id="@+id/SLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toLeftOf="@+id/button4"
+        android:minHeight="55dp"
+        android:text="Servo L" />
+
+    <Button
+        android:id="@+id/flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SLeft"
+        android:layout_alignRight="@+id/SRight"
+        android:layout_below="@+id/SLeft"
+        android:minHeight="55dp"
+        android:text="Flash"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/sonic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flash"
+        android:layout_alignBottom="@+id/flash"
+        android:layout_alignParentRight="true"
+        android:minHeight="55dp"
+        android:text="Sonic"
+        android:width="100dp" />
+
+    <TextView
+        android:id="@+id/Viewaccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="accelVals" />
+
+</RelativeLayout>

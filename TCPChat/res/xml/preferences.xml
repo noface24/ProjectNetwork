@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" ><EditTextPreference android:key="@string/Input_Name" android:title="@string/Input_Name"/>
+<EditTextPreference android:title="@string/Target_IP" android:key="@string/Target_IP"/>
+    
+
+</PreferenceScreen>
